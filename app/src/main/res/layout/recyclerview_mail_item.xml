@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dp">
+
+  <TextView
+    android:id="@+id/tvIcon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/rounded_drawable"
+    android:gravity="center"
+    android:text="A"
+    android:textColor="@android:color/white"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/tvEmailSender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/tvIcon"
+    android:layout_toRightOf="@+id/tvIcon"
+    android:text="TextView"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+  <TextView
+    android:id="@+id/tvEmailTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvEmailSender"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_toEndOf="@+id/tvIcon"
+    android:layout_toRightOf="@+id/tvIcon"
+    android:text="TextView"
+    android:textStyle="bold" />
+
+  <TextView
+    android:id="@+id/tvEmailDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvEmailTitle"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_toEndOf="@+id/tvIcon"
+    android:layout_toRightOf="@+id/tvIcon"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:text="This is a very long text and we need to show 3...(dots)" />
+
+  <TextView
+    android:id="@+id/tvEmailTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@id/tvEmailSender"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:text="TextView" />
+
+  <ImageView
+    android:id="@+id/ivFavorite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/tvEmailTime"
+    android:padding="5dp"
+    android:src="@drawable/ic_star_black_24dp" />
+</RelativeLayout>
